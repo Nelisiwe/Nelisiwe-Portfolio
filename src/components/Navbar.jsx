@@ -14,7 +14,9 @@ const Navbar = () => {
             return (
               <li className='nav_item' key={index}>
               <NavLink to={path} className={({ isActive }) => 
-              isActive ? 'nav_link active-nav' : 'nav_link'}>
+              isActive ? 'nav_link active-nav' : 'nav_link'}
+              onClick={() => setShowMenu(!showMenu)}
+              >
                 {icon}
                 <h3 className='nav_item'>{name}</h3>
               </NavLink>
@@ -23,7 +25,7 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div className='nav_toggle' onClick={() => setShowMenu(!showMenu)}> 
+      <div className={`${showMenu ? 'nav_toggle animate-toggle' : 'nav_toggle'}`} onClick={() => setShowMenu(!showMenu)}> 
           <span></span>
           <span></span>
           <span></span>
