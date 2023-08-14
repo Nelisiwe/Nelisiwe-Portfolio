@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className='nav'>
       <div className={`${showMenu ? 'nav_menu show-menu' : 'nav_menu'}`}>
         <ul className='nav_list'>
-          {links.map(({ name, icon, path }, index) => {
+          {links.map(({ icon, path }, index) => {
             return (
               <li className='nav_item' key={index}>
               <NavLink to={path} className={({ isActive }) => 
@@ -18,7 +18,7 @@ const Navbar = () => {
               onClick={() => setShowMenu(!showMenu)}
               >
                 {icon}
-                <h3 className='nav_item'>{name}</h3>
+                <h3 className='nav_item'></h3>
               </NavLink>
               </li>
             );

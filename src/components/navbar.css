@@ -20,18 +20,12 @@
     padding-block: 14px;
 }
 
-.nav_icon,
-.nav_name {
+.nav_icon {
     color: var(--title-text-color);
     font-size: 24px;
 }
 
-.nav_name {
-    font-weight: var(--weight-500);
-}
-
-.active-nav .nav_icon,
-.active-nav .nav_name {
+.active-nav .nav_icon {
     color: var(--main-color);
 }
 
@@ -91,7 +85,13 @@
     .nav_link {
         padding: 0;
         border-bottom: none;
-        background-color: var(--container-color);
+        background-color: var(--body-color);
+
+    }
+
+        .nav_link:hover .nav_icon,
+        .active-nav .nav_icon{
+        color: var(--main-color);
 
     }
 }
