@@ -18,7 +18,7 @@
      --first-font: 'Poppins', sans-serif;
 
      --big-font: 56px;
-     --h1-font: 50;
+     --h1-font: 50px;
      --h2-font: 32px;
      --h3-font: 24px;
      --large-font: 18px;
@@ -82,3 +82,41 @@ h4 {
  img {
     max-width: 100%;
  }
+
+/*======reusable css======*/
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.section {
+    padding-block: 70px;
+}
+
+.button {
+    display: block;
+    width: 130px;
+    color: var(--title-text-color);
+    border: 1px solid var(--title-text-color);
+    background-color: var(--main-color);
+    padding: 15px 15px 17px 15px;
+    border-radius: 35px;
+    font-family: var(--big-font);
+    font-size: var(--small-font);
+    font-weight: var(--font-weight-500);
+    position: relative;
+    margin-left: 80px;
+}
+
+.button_icon {
+    background-color: var(--border-color);
+    position: absolute;
+    inset-block: -2px;
+    right: 0;
+    width: 55px;
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: var(--large-font);
+    text-align: center;
+    line-height: 60px;
+}
