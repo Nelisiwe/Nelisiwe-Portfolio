@@ -84,6 +84,12 @@ h4 {
  }
 
 /*======reusable css======*/
+
+.container {
+max-width: 1140px;
+margin-inline: auto;
+}
+
 .grid {
     display: grid;
     gap: 30px;
@@ -91,6 +97,13 @@ h4 {
 
 .section {
     padding-block: 70px;
+}
+
+.section_title {
+font-size: var(--big-font);
+font-family: var(--font-weight-800);
+text-align: center;
+margin-bottom: 70px;
 }
 
 .button {

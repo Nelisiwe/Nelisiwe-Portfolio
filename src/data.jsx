@@ -16,16 +16,16 @@ export const links = [
 
   {
     id: 2,
-    name: 'About',
+    name: 'Education',
     icon: <FaUser className='nav_icon' />,
-    path: '/about',
+    path: '/education',
   },
 
   {
     id: 3,
-    name: 'Portfolio',
+    name: 'Projects',
     icon: <FaFolderOpen className='nav_icon' />,
-    path: '/portfolio',
+    path: '/projects',
   },
 
   {
@@ -33,6 +33,68 @@ export const links = [
     name: 'Contact',
     icon: <FaEnvelopeOpen className='nav_icon' />,
     path: '/contact',
+  },
+];
+
+export const personalInfo = [
+  {
+    id: 1,
+    title: 'First Name : ',
+    description: 'Steve',
+  },
+
+  {
+    id: 2,
+    title: 'Last Name : ',
+    description: 'Milner',
+  },
+
+  {
+    id: 3,
+    title: 'Age : ',
+    description: '27 Years',
+  },
+
+  {
+    id: 4,
+    title: 'Nationality : ',
+    description: 'Tunisian',
+  },
+
+  {
+    id: 5,
+    title: 'Freelance : ',
+    description: 'Available',
+  },
+
+  {
+    id: 6,
+    title: 'Address : ',
+    description: 'Tunis',
+  },
+
+  {
+    id: 7,
+    title: 'Phone : ',
+    description: '+21621184010',
+  },
+
+  {
+    id: 8,
+    title: 'Email : ',
+    description: 'you@mail.com',
+  },
+
+  {
+    id: 9,
+    title: 'Skype : ',
+    description: 'steve.milner',
+  },
+
+  {
+    id: 10,
+    title: 'Langages : ',
+    description: 'French, English',
   },
 ];
 
