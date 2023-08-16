@@ -35,6 +35,18 @@
     border-radius: 30px;
 }
 
+.home_details {
+    margin-block: 5px 16px;
+    text-align: center;
+    color: var(--text-white-color);
+ }
+
+ .home_details {
+    margin-block: 10px 18px;
+    text-align: center;
+    color: var(--text-white-color);
+ }
+
 .home_data {
     max-width: 600px;
     margin-inline: auto;
@@ -62,3 +74,5 @@
     width: 200px;
     height: 200px;
  }
+
+

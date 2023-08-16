@@ -11,6 +11,12 @@ const Home = () => {
       <div className='home_container'>
       <h1 className='home_image_title'>Nelisiwe Software Developer</h1>
         <img src={Profile} alt='' className='home_img' />
+        <p className='home_details'>
+           nelimajobe@gmail.com
+          </p>
+          <p className='home_details'>
+           Front-End / Software Developer
+          </p>
         <Link to='/education' className='button'>
             Hire Me <span className='button_icon'><FaArrowRight /></span>
           </Link>
