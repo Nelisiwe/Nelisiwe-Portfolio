@@ -3,6 +3,8 @@ import {
   FaUser,
   FaFolderOpen,
   FaEnvelopeOpen,
+  FaBriefcase,
+  FaGraduationCap,
 } from 'react-icons/fa';
 
 
@@ -36,65 +38,108 @@ export const links = [
   },
 ];
 
-export const personalInfo = [
+export const resume = [
   {
     id: 1,
-    title: 'First Name : ',
-    description: 'Steve',
+    category: 'experience',
+    icon: <FaBriefcase />,
+    year: '2023 - PRESENT',
+    title: 'Software developer <span> Younglings africa </span>',
+    desc: 'Designs and builds computer programs that power mobile devices and desktop computers.',
   },
 
   {
     id: 2,
-    title: 'Last Name : ',
-    description: 'Milner',
+    category: 'experience',
+    icon: <FaBriefcase />,
+    year: '2017 - 2019',
+    title: 'Front-End Developer <span> Playlogix </span>',
+    desc: 'Building reusable codes, optimizing page loading times, and using a variety of markup languages to create the web pages.',
   },
 
   {
     id: 3,
-    title: 'Age : ',
-    description: '27 Years',
+    category: 'experience',
+    icon: <FaBriefcase />,
+    year: '2014 - 2015',
+    title: 'Junior Front-End developer <span> Cheil South africa </span>',
+    desc: 'Developing new user-facing features, determining the structure and design of web pages.',
   },
 
   {
     id: 4,
-    title: 'Nationality : ',
-    description: 'Tunisian',
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2023',
+    title: 'React application using AWS Apmlify <span> LinkedIn </span>',
+    desc: 'Create a simple full-stack web application using AWS Amplify, a set of tools and services including a web hosting. ',
   },
 
   {
     id: 5,
-    title: 'Freelance : ',
-    description: 'Available',
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2022',
+    title: 'Web Development Boot-Camp <span> Udemy </span>',
+    desc: 'Project-based learning experience, work on real-world web applications and sites, including front-end and back-end web development work.',
   },
 
   {
     id: 6,
-    title: 'Address : ',
-    description: 'Tunis',
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2013',
+    title: 'Diploma Systems and Web Development <span> Majuba FET </span>',
+    desc: 'Creating, building, and maintaining websites and web applications that run online on a browser.',
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    title: 'React',
+    percentage: '85',
+  },
+
+  {
+    id: 2,
+    title: 'Html',
+    percentage: '90',
+  },
+
+  {
+    id: 3,
+    title: 'Javascript',
+    percentage: '79',
+  },
+
+  {
+    id: 4,
+    title: 'Css',
+    percentage: '90',
+  },
+
+  {
+    id: 5,
+    title: 'Python',
+    percentage: '30',
+  },
+
+  {
+    id: 6,
+    title: 'Figma',
+    percentage: '65',
   },
 
   {
     id: 7,
-    title: 'Phone : ',
-    description: '+21621184010',
+    title: 'Balsamiq',
+    percentage: '65',
   },
 
   {
     id: 8,
-    title: 'Email : ',
-    description: 'you@mail.com',
-  },
-
-  {
-    id: 9,
-    title: 'Skype : ',
-    description: 'steve.milner',
-  },
-
-  {
-    id: 10,
-    title: 'Langages : ',
-    description: 'French, English',
+    title: 'AWS',
+    percentage: '65',
   },
 ];
-

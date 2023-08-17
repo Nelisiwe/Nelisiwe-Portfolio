@@ -1,18 +1,42 @@
-import React from 'react'
+import React from 'react';
+import { resume}  from '../../data';
+import ResumeItem from '../../components/ResumeItem';
+import Skills from '../../components/Skills';
+
+import "./education.css"
 
 const Education = () => {
   return (
     <main className='section container'>
-      <section className='education'>
-      <h2 className='section_title'>
-        Education
-      </h2>
-
-      <div className='education_container grid'>
-        <div className='educttion_info'>
-          <h3 className='section_subtitle'>Education & Experience</h3>
+      <section className='resume' >
+      <h3 className='section_subtitle subtitle_center'> Experience & Education </h3>
+       
+       <div className="resume_container grid">
+        <div className="resume_data">
+          {resume.map((val) => {
+            if (val.category === 'experience') {
+              return <ResumeItem key={val.id} {...val} />;
+            }
+          })}
         </div>
-      </div>
+        <div className="resume_data">
+          {resume.map((val) => {
+            if (val.category === 'education') {
+              return <ResumeItem key={val.id} {...val} />;
+            }
+          })}
+        </div>     
+       </div>
+      </section>
+
+      <div className="separator"></div>
+
+      <section className='skills'>
+        <h3 className='section_subtitle subtitle_center'>Skills</h3>
+
+        <div className='skills_container grid'>
+          <Skills />
+        </div>
       </section>
     </main>
   );
