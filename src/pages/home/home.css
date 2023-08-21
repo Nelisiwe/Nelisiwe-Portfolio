@@ -28,9 +28,10 @@
 }
 
 .home_img {
-    width: 280px;
-    height: 200px;
-    margin-left: 10px;
+    width: 90%;
+    object-fit: cover;
+    height: 230px;
+    margin: 0 15px;
     border: 1px solid var(--title-text-color);
     border-radius: 30px;
 }
@@ -72,5 +73,26 @@
     width: 200px;
     height: 200px;
  }
+.home_socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    column-gap: 16px;
+}
 
+ .home_social-link {
+    background-color: var(--container-color);
+    color: var(--title-text-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.3s ease;
+}
+
+.home_social-link:hover {
+    background-color: var(--main-color);
+    color: var(--title-text-color);
+}
 

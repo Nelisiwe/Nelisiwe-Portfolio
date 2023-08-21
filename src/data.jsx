@@ -5,6 +5,9 @@ import {
   FaEnvelopeOpen,
   FaBriefcase,
   FaGraduationCap,
+  FaGithub,
+  FaLinkedin,
+  FaWhatsapp,
 } from 'react-icons/fa';
 
 

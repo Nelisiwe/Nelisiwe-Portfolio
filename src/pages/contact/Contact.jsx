@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaEnvelopeOpen, FaPhoneSquareAlt } from 'react-icons/fa';
+import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub, FaWhatsapp  } from 'react-icons/fa';
+import { FiSend } from 'react-icons/fi'
 import "./contact.css"
 
 
@@ -37,16 +38,16 @@ const Contact = () => {
             </div>
           </div>
           <div className='contact_socials'>
-            <a href='https://faceboo.com' className='contact_social-link'>
-              <FaEnvelopeOpen />
+            <a href='https://github.com/Nelisiwe?tab=repositories' className='contact_social-link'>
+              < FaGithub/>
             </a>
 
-            <a href='https://faceboo.com' className='contact_social-link'>
-              <FaEnvelopeOpen />
+            <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' className='contact_social-link'>
+              <FaLinkedin />
             </a>
 
-            <a href='https://faceboo.com' className='contact_social-link'>
-              <FaPhoneSquareAlt />
+            <a href='https://wa.link/xxs17c' className='contact_social-link'>
+              <FaWhatsapp />
             </a>
           </div>       
         </div>
@@ -75,13 +76,19 @@ const Contact = () => {
                 className='form_control' 
                 />
             </div>
-            <div className='form_input-div'>
-              <textarea 
-                placeholder='Your Message' 
-                className='form_control textarea' 
-                ></textarea>
+          </div>  
+          <div className='form_input-div'>
+            <textarea 
+              placeholder='Your Message' 
+              className='form_control textarea' 
+            ></textarea>
             </div>
-          </div>
+            <button className='button'>
+              Send
+              <span className="button_icon contact_button-icon">
+                <FiSend />
+              </span>
+            </button>
         </form>
       </div>
     </section>
