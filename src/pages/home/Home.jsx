@@ -1,8 +1,8 @@
 import React from 'react'
-import Profile from "../../assets/home.jpg";
-import MyLogo from "../../assets/logo.jpg"
+import Profile from "../../images/home.jpg";
+import MyLogo from "../../images/white-logo.jpg"
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import "./home.css"
 
 const Home = () => {
@@ -16,11 +16,28 @@ const Home = () => {
           </p>
           <p className='home_details'>
            Front-End / Software Developer
-          </p>
-        <Link to='/education' className='button'>
-            Hire Me <span className='button_icon'><FaArrowRight /></span>
-          </Link>
-          <img src={MyLogo} alt='' className='home_logo' />
+        </p>
+
+        <div className='home_socials'>
+            <a href='https://github.com/Nelisiwe?tab=repositories' className='home_social-link'>
+              < FaGithub/>
+            </a>
+
+            <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' className='home_social-link'>
+              <FaLinkedin />
+            </a>
+
+            <a href='https://wa.link/xxs17c' className='home_social-link'>
+              <FaWhatsapp />
+            </a>
+          </div>       
+
+        <div className='home_button_container'>
+          <Link to='/education' className='button'>
+              Hire Me <span className='button_icon'><FaArrowRight /></span>
+            </Link>
+            <img src={MyLogo} alt='' className='home_logo' />
+          </div>    
       </div>
 
       <div className='home_content'>
