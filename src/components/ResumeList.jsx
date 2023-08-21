@@ -1,7 +1,7 @@
 import React from 'react';
 import parse from 'html-react-parser';
 
-const ResumeItem = ({ icon, year, title, desc }) => {
+const ResumeList = ({ icon, year, title, desc }) => {
   return (
     <div className='resume_item'>
         <div className='resume_icon'>{icon}</div>

@@ -7,7 +7,7 @@ import "./contact.css"
 const Contact = () => {
   return (
     <section className='contact section'>
-      <h2 section_title>
+      <h2 className='section_title'>
         Get in <span>Touch</span>
       </h2>
 
@@ -83,7 +83,7 @@ const Contact = () => {
               className='form_control textarea' 
             ></textarea>
             </div>
-            <button className='button'>
+            <button className='contact_button'>
               Send
               <span className="button_icon contact_button-icon">
                 <FiSend />

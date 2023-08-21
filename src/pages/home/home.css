@@ -73,11 +73,12 @@
     width: 200px;
     height: 200px;
  }
+
 .home_socials {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
     column-gap: 16px;
+    margin-bottom: 20px;
 }
 
  .home_social-link {
@@ -95,4 +96,16 @@
     background-color: var(--main-color);
     color: var(--title-text-color);
 }
+
+.home_button_container  {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.button {
+    margin-left: 1px;
+    padding: 10px 15px 10px 40px !important;
+}
+
 
