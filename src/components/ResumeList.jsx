@@ -13,4 +13,4 @@ const ResumeList = ({ icon, year, title, desc }) => {
   );
 };
 
-export default ResumeItem
+export default ResumeList

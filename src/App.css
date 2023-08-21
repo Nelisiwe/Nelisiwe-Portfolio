@@ -106,22 +106,6 @@ text-align: center;
 margin-bottom: 70px;
 }
 
-
-.button {
-    display: block;
-    width: 160px;
-    color: var(--title-text-color);
-    border: 1px solid var(--title-text-color);
-    background-color: var(--main-color);
-    padding: 10px 15px 10px 15px;
-    border-radius: 25px;
-    font-family: var(--big-font);
-    font-size: var(--small-font);
-    font-weight: var(--font-weight-500);
-    position: relative;
-    margin-left: 65px;
-}
-
 .button_icon {
     background-color: var(--border-color);
     position: absolute;

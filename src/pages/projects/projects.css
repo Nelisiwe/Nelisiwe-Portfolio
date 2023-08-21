@@ -1,0 +1,8 @@
+.home_title {
+    position: relative;
+    font-size: var(--h1-font);
+    line-height: 1.24;
+}
+ .home_title span {
+    color: var(--main-color);
+ }
