@@ -108,17 +108,17 @@ margin-bottom: 70px;
 
 .button {
     display: block;
-    width: 200px;
+    width: 160px;
     color: var(--title-text-color);
     border: 1px solid var(--title-text-color);
     background-color: var(--main-color);
-    padding: 15px 15px 17px 15px;
-    border-radius: 35px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
     font-family: var(--big-font);
     font-size: var(--small-font);
     font-weight: var(--font-weight-500);
     position: relative;
-    margin-left: 50px;
+    margin-left: 65px;
 }
 
 .button_icon {
@@ -126,10 +126,10 @@ margin-bottom: 70px;
     position: absolute;
     inset-block: -2px;
     right: 0;
-    width: 55px;
+    width: 40px;
     border-radius: 50%;
     color: var(--main-color);
     font-size: var(--large-font);
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
 }
