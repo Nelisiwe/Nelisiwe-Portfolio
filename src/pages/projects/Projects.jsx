@@ -1,12 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { project } from '../../data';
+import ProjectList from '../../components/ProjectList';
+import "./projects.css"
 
 const Projects = () => {
   return (
     <section className='portfolio section'>
       <h2 className='section_title'>My <span>Projects</span></h2>
 
-      <div className='Projects_container container grid'>
-
+      <div className='projects_container container grid'>
+        {project.map((item) => {
+          return <ProjectList key={item.id} {...item} />;
+        })}
       </div>
     </section>
   )

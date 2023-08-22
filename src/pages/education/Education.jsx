@@ -1,6 +1,6 @@
 import React from 'react';
 import { resume}  from '../../data';
-import ResumeItem from '../../components/ResumeItem';
+import ResumeList from '../../components/ResumeList';
 import Skills from '../../components/Skills';
 
 import "./education.css"
@@ -15,14 +15,14 @@ const Education = () => {
         <div className="resume_data">
           {resume.map((val) => {
             if (val.category === 'experience') {
-              return <ResumeItem key={val.id} {...val} />;
+              return <ResumeList key={val.id} {...val} />;
             }
           })}
         </div>
         <div className="resume_data">
           {resume.map((val) => {
             if (val.category === 'education') {
-              return <ResumeItem key={val.id} {...val} />;
+              return <ResumeList key={val.id} {...val} />;
             }
           })}
         </div>     

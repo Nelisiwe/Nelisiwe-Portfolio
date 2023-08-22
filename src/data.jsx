@@ -5,10 +5,16 @@ import {
   FaEnvelopeOpen,
   FaBriefcase,
   FaGraduationCap,
-  FaGithub,
-  FaLinkedin,
-  FaWhatsapp,
+  FaCode,
 } from 'react-icons/fa';
+import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
+
+import Work1 from './images/project-1.png';
+import Work2 from './images/project-2.png';
+import Work3 from './images/project-3.png';
+import Work4 from './images/project-4.jpg';
+import Work5 from './images/project-5.png';
+import Work6 from './images/project-6.png';
 
 
 export const links = [
@@ -146,3 +152,170 @@ export const skills = [
     percentage: '65',
   },
 ];
+
+export const project = [
+  {
+    id: 1,
+    img: Work1,
+    title: 'Mzamomtsha Primary',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Website',
+      },
+      {
+        icon: <FiUser />,
+        title: 'School : ',
+        desc: 'Mzamomtsha Primary',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Html, CSS & JavaScript',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://github.com/Nelisiwe?tab=repositories',
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    img: Work2,
+    title: 'Website Design',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Website',
+      },
+      {
+        icon: <FiUser />,
+        title: 'School Project : ',
+        desc: 'Banking App',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Python',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://github.com/Nelisiwe?tab=repositories',
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    img: Work3,
+    title: 'Game App',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Website',
+      },
+      {
+        icon: <FiUser />,
+        title: 'School Project : ',
+        desc: 'Snake Game',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Adobe Premium',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://github.com/Nelisiwe?tab=repositories',
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    img: Work4,
+    title: 'Design',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Figma Desigm',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'Wedding Card',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Figma',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://github.com/Nelisiwe?tab=repositories',
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    img: Work5,
+    title: 'Landing Page',
+    details: [
+      {
+        title: 'Project : ',
+        desc: 'Website',
+      },
+      {
+        title: 'Client : ',
+        desc: 'Side Project',
+      },
+      {
+        title: 'Language : ',
+        desc: 'React JS, Node JS',
+      },
+      {
+        title: 'Preview : ',
+        desc: 'https://github.com/Nelisiwe?tab=repositories',
+      },
+    ],
+  },
+
+  {
+    id: 6,
+    img: Work6,
+    title: 'Photo Editing',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Photo',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'Dribble',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Adobe Photoshop',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://github.com/Nelisiwe?tab=repositories',
+      },
+    ],
+  },
+];
+
