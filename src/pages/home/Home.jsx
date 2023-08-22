@@ -3,6 +3,7 @@ import Profile from "../../images/home.jpg";
 import MyLogo from "../../images/white-logo.jpg"
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { TypeAnimation } from 'react-type-animation';
 import "./home.css"
 
 const Home = () => {
@@ -43,7 +44,18 @@ const Home = () => {
       <div className='home_content'>
         <div className='home_data'>
           <h1 className='home_title'>
-            <span>I'm Nelisiwe Gumede.</span> Front-end/Software Developer
+          Nelisiwe Gumede
+          </h1>
+          <h1 className='home_title'>
+            I am a <TypeAnimation sequence={[
+            'Front-end Developer',
+            2000,
+            'Software Developer',  
+            2000,
+            ]} 
+          speed={50}
+          repeat={Infinity}
+              />          
           </h1>
 
           <p className='home_description'>
