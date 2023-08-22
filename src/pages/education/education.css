@@ -67,6 +67,15 @@
     line-height: 1.6;
 }
 
+.resume_description:hover {
+    background-color: var(--container-color);
+    border-radius: 20px;
+    padding-left: 10px;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    box-shadow: 0 0 20px rgba(12, 2, 71, 9);
+}
+
 .separator {
     border-top: 1px solid var(--main-color);
     max-width: 60%;
