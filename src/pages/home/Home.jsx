@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <section className='home section grid'>
       <div className='home_container'>
-      <h1 className='home_image_title'>Nelisiwe Software Developer</h1>
         <img src={Profile} alt='' className='home_img' />
         <p className='home_details'>
            nelimajobe@gmail.com

@@ -51,7 +51,7 @@ const PraticleBg = () => {
                         distance: 150,
                         enable: true,
                         opacity: 0.1,
-                        width: 1,
+                        width: 2,
                     },
                     move: {
                         direction: "none",
