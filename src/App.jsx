@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import DarkMode from './components/DarkMode'
 import PraticleBg from './components/PraticleBg'
 import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
@@ -11,6 +12,7 @@ import './App.css'
 function App() {
   return (
     <BrowserRouter>
+      <DarkMode />
       <PraticleBg />
       <Navbar />
       <Routes>
