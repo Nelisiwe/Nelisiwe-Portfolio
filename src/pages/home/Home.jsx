@@ -1,12 +1,13 @@
 import React from 'react'
-import Profile from "../../images/home.jpg";
+import Profile from "../../images/home.jpg"
 import MyLogo from "../../images/white-logo.jpg"
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
-import { TypeAnimation } from 'react-type-animation';
+import { FaArrowRight, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa'
+import { TypeAnimation } from 'react-type-animation'
 import "./home.css"
 
 const Home = () => {
+  
   return (
     <section className='home section grid'>
       <div className='home_container'>
