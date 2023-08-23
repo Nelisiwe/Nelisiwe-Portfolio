@@ -44,13 +44,13 @@ const PraticleBg = () => {
                 },
                 particles: {
                     color: {
-                        value: "rgb(2, 13, 113);",
+                        value: "#000",
                     },
                     links: {
-                        color: "rgb(2, 13, 113);",
+                        color: "#000",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 0.1,
                         width: 1,
                     },
                     move: {
