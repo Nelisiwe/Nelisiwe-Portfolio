@@ -1,31 +1,65 @@
 import React, { useState } from 'react';
-import { db } from '../../firebaseConfig';
-import { addDoc, collection } from 'firebase/firestore';
 import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub, FaWhatsapp  } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi'
 import "./contact.css"
 
 
 const Contact = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [subject, setSubject] = useState();
-  const [message, setMessage] = useState();
+  const initialFormData = {
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  };
 
-  const userCollectionRef = collection(db, "contactdata")
+  const [formData, setFormData] = useState(initialFormData);
+  const [errors, setErrors] = useState({});
 
-  const handleSubmit =() => {
-    addDoc(userCollectionRef, {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-    }).then(() => {
-      if(!alert("Form Submitted Successfully")) document.location = 'https://google.com/'
-    })
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
-  }
- 
+  const validateForm = () => {
+    const validationErrors = {};
+
+    if (!formData.name.trim()) {
+      validationErrors.name = 'Name is required';
+    }
+
+    if (!formData.email.trim()) {
+      validationErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      validationErrors.email = 'Email is not valid';
+    }
+
+    if (!formData.subject.trim()) {
+      validationErrors.subject = 'Subject is required';
+    }
+
+    if (!formData.message.trim()) {
+      validationErrors.message = 'Message is required';
+    } else if (formData.message.length < 24) {
+      validationErrors.message = 'Message should be at least 24 characters';
+    }
+
+    return validationErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = validateForm();
+    setErrors(validationErrors);
+
+    if (Object.keys(validationErrors).length === 0) {
+      alert('Form Submitted Successfully');
+      setFormData(initialFormData);
+    }
+  };
+
   return (
     <section className='contact section'>
       <h2 className='section_title'>
@@ -73,48 +107,67 @@ const Contact = () => {
           </div>       
         </div>
 
-        <form className='contact_form'>
+        <form className='contact_form' onSubmit={handleSubmit}>
           <div className='form_input-group'>
+            {/* Name */}
             <div className='form_input-div'>
-              <input 
-              type='text' 
-              placeholder='Your Name' 
-              className='form_control' onChange={(event) => {
-                setName(event.target.value)
-              }}/>
+              <input
+                type='text'
+                name='name'
+                placeholder='Your Name'
+                className='form_control'
+                value={formData.name}
+                onChange={handleChange}
+              />
+              {errors.name && <span>{errors.name}</span>}
             </div>
 
+            {/* Email */}
             <div className='form_input-div'>
-              <input 
-                type='email' 
-                placeholder='Your Email' 
-                className='form_control' onChange={(event) => {
-                  setEmail(event.target.value)
-                }}/>
+              <input
+                type='email'
+                name='email'
+                placeholder='Your Email'
+                className='form_control'
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {errors.email && <span>{errors.email}</span>}
             </div>
+
+            {/* Subject */}
             <div className='form_input-div'>
-              <input 
-                type='text' 
-                placeholder='Subject' 
-                className='form_control' onChange={(event) => {
-                  setSubject(event.target.value)
-                }}/>
+              <input
+                type='text'
+                name='subject'
+                placeholder='Subject'
+                className='form_control'
+                value={formData.subject}
+                onChange={handleChange}
+              />
+              {errors.subject && <span>{errors.subject}</span>}
             </div>
-          </div>  
+          </div>
+
+          {/* Message */}
           <div className='form_input-div'>
-            <textarea 
-              placeholder='Your Message' 
-              className='form_control textarea'onChange={(event) => {
-                setMessage(event.target.value)
-              }}
-            ></textarea>
-            </div>
-            <button className='contact_button' onClick={handleSubmit}>
-              Send
-              <span className="button_icon contact_button-icon">
-                <FiSend />
-              </span>
-            </button>
+            <textarea
+              name='message'
+              placeholder='Your Message'
+              className='form_control textarea'
+              value={formData.message}
+              onChange={handleChange}
+            />
+            {errors.message && <span>{errors.message}</span>}
+          </div>
+
+          {/* Submit Button */}
+          <button className='contact_button' type='submit'>
+            Send
+            <span className='button_icon contact_button-icon'>
+              <FiSend />
+            </span>
+          </button>
         </form>
       </div>
     </section>
