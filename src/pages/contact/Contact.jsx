@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub, FaWhatsapp  } from 'react-icons/fa';
-import { FiSend } from 'react-icons/fi'
-import "./contact.css"
+import { FiSend } from 'react-icons/fi';
+import "./contact.css";
+import Footer from '../footer/Footer';
 
 
 const Contact = () => {
@@ -42,8 +43,6 @@ const Contact = () => {
 
     if (!formData.message.trim()) {
       validationErrors.message = 'Message is required';
-    } else if (formData.message.length < 24) {
-      validationErrors.message = 'Message should be at least 24 characters';
     }
 
     return validationErrors;
@@ -53,6 +52,7 @@ const Contact = () => {
     e.preventDefault();
     const validationErrors = validateForm();
     setErrors(validationErrors);
+    setFormData(initialFormData);
 
     if (Object.keys(validationErrors).length === 0) {
       alert('Form Submitted Successfully');
@@ -170,6 +170,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <Footer />
     </section>
   )
 }

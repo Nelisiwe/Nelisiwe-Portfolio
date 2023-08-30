@@ -1,0 +1,15 @@
+.footer {
+ margin-top: auto; 
+position: fixed;
+width: 100%;
+bottom: 0;
+color: var(--title-text-color);
+text-align: center;
+padding-bottom: 20px;
+}
+
+.footer_separator {
+border-top: 1px solid var(--main-color);
+margin: 20px 
+}
+

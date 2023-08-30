@@ -2,6 +2,8 @@ import React from 'react';
 import Particles from 'react-tsparticles';
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
+import '../App.css';
+
 
 const PraticleBg = () => {
     const particlesInit = useCallback(async engine => {

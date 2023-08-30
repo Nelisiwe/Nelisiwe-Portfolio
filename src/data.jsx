@@ -12,9 +12,6 @@ import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 import Work1 from './images/project-1.png';
 import Work2 from './images/project-2.png';
 import Work3 from './images/project-3.png';
-import Work4 from './images/project-4.jpg';
-import Work5 from './images/project-5.png';
-import Work6 from './images/project-6.png';
 
 
 export const links = [

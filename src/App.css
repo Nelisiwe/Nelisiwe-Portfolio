@@ -133,3 +133,7 @@ margin-bottom: 70px;
     text-align: center;
     line-height: 50px;
 }
+
+.particles-js {
+    z-index: 100;
+  }
