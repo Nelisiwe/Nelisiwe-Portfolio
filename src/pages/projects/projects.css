@@ -111,7 +111,7 @@
 
 @media (max-width: 768px) {
     .projects_container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: none;
         padding: 20px;
     }
 }

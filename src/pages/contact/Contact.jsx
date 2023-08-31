@@ -109,7 +109,6 @@ const Contact = () => {
 
         <form className='contact_form' onSubmit={handleSubmit}>
           <div className='form_input-group'>
-            {/* Name */}
             <div className='form_input-div'>
               <input
                 type='text'
@@ -121,8 +120,6 @@ const Contact = () => {
               />
               {errors.name && <span>{errors.name}</span>}
             </div>
-
-            {/* Email */}
             <div className='form_input-div'>
               <input
                 type='email'
@@ -134,8 +131,6 @@ const Contact = () => {
               />
               {errors.email && <span>{errors.email}</span>}
             </div>
-
-            {/* Subject */}
             <div className='form_input-div'>
               <input
                 type='text'
@@ -148,8 +143,6 @@ const Contact = () => {
               {errors.subject && <span>{errors.subject}</span>}
             </div>
           </div>
-
-          {/* Message */}
           <div className='form_input-div'>
             <textarea
               name='message'
@@ -160,8 +153,6 @@ const Contact = () => {
             />
             {errors.message && <span>{errors.message}</span>}
           </div>
-
-          {/* Submit Button */}
           <button className='contact_button' type='submit'>
             Send
             <span className='button_icon contact_button-icon'>

@@ -121,3 +121,31 @@
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .contact_container {
+        grid-template-columns: none;
+        padding: 20px;
+    }
+
+    .section_title  {
+        font-size: var(--large-font);
+        margin-bottom: 10px;
+    }
+
+    .contact_title {
+        font-size: var(--h5-font);
+        text-align: center;
+    }
+
+    .contact_info .info_icon {
+        font-size: var(--h3-font);
+    }
+
+    .contact_socials {
+        justify-content: center;
+    }
+    .form_input-group {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 15px;
+    }
+}

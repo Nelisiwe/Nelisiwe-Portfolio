@@ -25,10 +25,12 @@ const Navbar = () => {
           })}
         </ul>
       </div>
+      <div className='.nav_toggle-manu'>
       <div className={`${showMenu ? 'nav_toggle animate-toggle' : 'nav_toggle'}`} onClick={() => setShowMenu(!showMenu)}> 
           <span></span>
           <span></span>
           <span></span>
+      </div>
       </div>
     </nav>
   )
