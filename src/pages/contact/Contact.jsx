@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub, FaWhatsapp  } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
+import emailjs from '@emailjs/browser';
 import "./contact.css";
 import Footer from '../footer/Footer';
+
 
 
 const Contact = () => {
@@ -48,6 +50,8 @@ const Contact = () => {
     return validationErrors;
   };
 
+  const [messageSent, setMessageSent] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateForm();
@@ -55,8 +59,15 @@ const Contact = () => {
     setFormData(initialFormData);
 
     if (Object.keys(validationErrors).length === 0) {
-      alert('Form Submitted Successfully');
-      setFormData(initialFormData);
+      emailjs.sendForm('service_232ssir', 'template_kw0vdhp', e.target, 'qTSEW2o9D97HDP45P')
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setFormData(initialFormData);
+        setMessageSent(true);
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        });
     }
   };
 
@@ -154,11 +165,12 @@ const Contact = () => {
             {errors.message && <span>{errors.message}</span>}
           </div>
           <button className='contact_button' type='submit'>
-            Send
+            Send 
             <span className='button_icon contact_button-icon'>
               <FiSend />
             </span>
-          </button>
+          </button >
+          {messageSent && <p className="message-sent">Message sent successfully!</p>}
         </form>
       </div>
       <Footer />
