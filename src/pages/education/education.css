@@ -128,6 +128,10 @@ font-size: var(--large-font) !important;
         padding: 20px;
     }
 
+    .resume_description:hover {
+        transform: scale(1);
+    }
+
     .separator {
         width: 90%;
     }
@@ -135,4 +139,9 @@ font-size: var(--large-font) !important;
     .skills_container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .skills_title {
+        margin-top: 5px;
+    }
+
 }
