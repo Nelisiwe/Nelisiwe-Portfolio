@@ -120,3 +120,19 @@ font-size: var(--large-font) !important;
     text-align: center;
     margin-top: 24px;
 }
+
+@media (max-width: 768px) {
+
+    .resume_container, .education_container{
+        grid-template-columns: none;
+        padding: 20px;
+    }
+
+    .separator {
+        width: 90%;
+    }
+
+    .skills_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

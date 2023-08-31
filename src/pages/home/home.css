@@ -100,3 +100,71 @@
     justify-content: center;
     column-gap: 16px;
 }
+
+@media (max-width: 768px) {
+    .home {
+      grid-template-columns: none;
+      align-items: center;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .home_container {
+      width: 100%;
+      margin-top: 70px;
+      border-radius: 0;
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    .home_img {
+      width: 100%;
+      height: 390px;
+      margin: 0;
+      border: none;
+    }
+  
+    .home_details {
+        margin-block: unset;
+      text-align: center;
+      padding-top: 5px;
+    }
+
+    .home_socials {
+        display: none;
+    }   
+  
+    .home_data {
+      max-width: 100%;
+      margin-inline: 0;
+      margin-top: 10px;
+    }
+  
+    .home_title {
+        display: none;
+    }
+  
+    .home_title span {
+        display: none;
+        color: var(--main-color);
+    }
+
+    .home_button_container {
+        margin-top: 15px;
+    }
+
+    .home_title-label {
+        text-align: center;
+    }
+  
+    .home_description {
+      line-height: 1.5;
+      margin-block: 16px 0;
+    }
+  
+    .home_logo {
+display: none;
+    }
+}
+  
