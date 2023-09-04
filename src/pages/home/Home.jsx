@@ -35,7 +35,7 @@ const Home = () => {
 
         <div className='home_button_container'>
           <Link to='/education' className='button'>
-              Hire Me <span className='button_icon'><FaArrowRight /></span>
+              Download CV <span className='button_icon'><FaArrowRight /></span>
             </Link>
             <img src={MyLogo} alt='' className='home_logo' />
           </div>    

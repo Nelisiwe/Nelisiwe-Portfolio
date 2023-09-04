@@ -3,11 +3,14 @@ import { FaEnvelopeOpen, FaPhoneSquareAlt, FaLinkedin, FaGithub, FaWhatsapp  } f
 import { FiSend } from 'react-icons/fi';
 import emailjs from '@emailjs/browser';
 import "./contact.css";
+import ReCAPTCHA from "react-google-recaptcha";
 import Footer from '../footer/Footer';
 
 
 
 const Contact = () => {
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
+
   const initialFormData = {
     name: '',
     email: '',
@@ -57,6 +60,14 @@ const Contact = () => {
     const validationErrors = validateForm();
     setErrors(validationErrors);
     setFormData(initialFormData);
+
+    if (!recaptchaValue) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        recaptcha: "Please verify that you are not a robot.",
+      }));
+      return;
+    }
 
     if (Object.keys(validationErrors).length === 0) {
       emailjs.sendForm('service_232ssir', 'template_kw0vdhp', e.target, 'qTSEW2o9D97HDP45P')
@@ -164,6 +175,13 @@ const Contact = () => {
             />
             {errors.message && <span>{errors.message}</span>}
           </div>
+          <div className="form_input-div">
+          <ReCAPTCHA
+            sitekey="6LdJs_onAAAAAEElJ0DN9Sp7aUrwFRksADWi8990"
+            onChange={(value) => setRecaptchaValue(value)}
+          />
+          {errors.recaptcha && <span>{errors.recaptcha}</span>}
+        </div>
           <button className='contact_button' type='submit'>
             Send 
             <span className='button_icon contact_button-icon'>
