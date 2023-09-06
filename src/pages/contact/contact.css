@@ -161,10 +161,17 @@
     .contact_container {
         padding: 30px;
     }
+
+    .section_title  {
+        font-size: var(--h2-font);
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .contact_container {
         padding: 30px;
+    }
+    .section_title  {
+        font-size: var(--h1-font);
     }
 }
