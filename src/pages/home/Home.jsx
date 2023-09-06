@@ -20,22 +20,22 @@ const Home = () => {
         </p>
 
         <div className='home_socials'>
-            <a href='https://github.com/Nelisiwe?tab=repositories' className='home_social-link'>
+            <a href='https://github.com/Nelisiwe?tab=repositories' target="_blank" className='home_social-link'>
               < FaGithub/>
             </a>
 
-            <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' className='home_social-link'>
+            <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' target="_blank" className='home_social-link'>
               <FaLinkedin />
             </a>
 
-            <a href='https://wa.link/xxs17c' className='home_social-link'>
+            <a href='https://wa.link/xxs17c' target="_blank" className='home_social-link'>
               <FaWhatsapp />
             </a>
           </div>       
 
         <div className='home_button_container'>
           <Link to='/education' className='button'>
-              Download CV <span className='button_icon'><FaArrowRight /></span>
+              Download <span className='button_icon'><FaArrowRight /></span>
             </Link>
             <img src={MyLogo} alt='' className='home_logo' />
           </div>    

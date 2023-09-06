@@ -108,7 +108,7 @@ margin-bottom: 70px;
 
 
 .button {
-    display: block;
+    display: inline-block;
     width: 160px;
     color: var(--title-text-color);
     border: 1px solid var(--title-text-color);
@@ -119,20 +119,25 @@ margin-bottom: 70px;
     font-size: var(--small-font);
     font-weight: var(--font-weight-500);
     position: relative;
+    overflow: hidden;
 }
 
 .button_icon {
-    background-color: var(--border-color);
+    background-color: var(--text-white-color);
     position: absolute;
     inset-block: -2px;
     right: 0;
     width: 40px;
     border-radius: 50%;
-    color: var(--text-white-color);
+    color: var(--main-color);
     font-size: var(--large-font);
     text-align: center;
     line-height: 50px;
+    animation: myfirst 5s 2;
+    animation-direction: alternate;
 }
+
+
 
 .particles-js {
     z-index: 100;

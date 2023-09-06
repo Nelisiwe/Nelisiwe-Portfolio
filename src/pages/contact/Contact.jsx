@@ -59,7 +59,6 @@ const Contact = () => {
     e.preventDefault();
     const validationErrors = validateForm();
     setErrors(validationErrors);
-    setFormData(initialFormData);
 
     if (!recaptchaValue) {
       setErrors((prevErrors) => ({
@@ -115,15 +114,15 @@ const Contact = () => {
             </div>
           </div>
           <div className='contact_socials'>
-            <a href='https://github.com/Nelisiwe?tab=repositories' className='contact_social-link'>
+            <a href='https://github.com/Nelisiwe?tab=repositories' target="_blank" className='contact_social-link'>
               < FaGithub/>
             </a>
 
-            <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' className='contact_social-link'>
+            <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' target="_blank" className='contact_social-link'>
               <FaLinkedin />
             </a>
 
-            <a href='https://wa.link/xxs17c' className='contact_social-link'>
+            <a href='https://wa.link/xxs17c' target="_blank" className='contact_social-link'>
               <FaWhatsapp />
             </a>
           </div>       
