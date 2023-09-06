@@ -77,7 +77,7 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2023',
-    title: 'React application using AWS Apmlify <span> LinkedIn </span>',
+    title: 'React application <span> LinkedIn </span>',
     desc: 'Create a simple full-stack web application using AWS Amplify, a set of tools and services including a web hosting. ',
   },
 
@@ -86,8 +86,8 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2022',
-    title: 'Web Development Boot-Camp <span> Udemy </span>',
-    desc: 'Project-based learning experience, work on real-world web applications and sites, including front-end and back-end web development work.',
+    title: 'Web Development <span> Udemy </span>',
+    desc: 'Project-based learning experience and work on real-world web applications and sites.',
   },
 
   {

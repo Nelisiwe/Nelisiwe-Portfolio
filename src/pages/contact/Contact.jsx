@@ -177,7 +177,7 @@ const Contact = () => {
           </div>
           <div className="form_input-div">
           <ReCAPTCHA
-            sitekey="6LdJs_onAAAAAEElJ0DN9Sp7aUrwFRksADWi8990"
+            sitekey="6LcZnAIoAAAAABpv1AXpYOoKnnP9gfUPCTqFdWlr"
             onChange={(value) => setRecaptchaValue(value)}
           />
           {errors.recaptcha && <span>{errors.recaptcha}</span>}

@@ -147,3 +147,35 @@ font-size: var(--large-font) !important;
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 991px){
+    .resume_container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 70px;
+    }
+
+    .separator {
+        max-width: 90%; 
+
+    }
+
+    .skills_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .resume_container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 70px;
+    }
+
+    .separator {
+        max-width: 90%; 
+
+    }
+
+    .skills_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

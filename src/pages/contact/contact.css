@@ -30,7 +30,7 @@
 
 .contact_info .info_icon {
     color: var(--main-color);
-    font-size: var(--h2-font);
+    font-size: var(--h3-font);
 }
 
 .contact_info .info_title {
@@ -113,7 +113,7 @@
     color: var(--title-text-color);
     border: 1px solid var(--title-text-color);
     background-color: var(--main-color);
-    padding: 10px 15px 10px 0;
+    padding: 10px 15px;
     border-radius: 25px;
     font-family: var(--big-font);
     font-size: var(--small-font);
@@ -128,10 +128,10 @@
   }
   
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .contact_container {
         grid-template-columns: none;
-        padding: 20px;
+        padding: 30px;
     }
 
     .section_title  {
@@ -154,5 +154,17 @@
     .form_input-group {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .contact_container {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contact_container {
+        padding: 30px;
     }
 }
