@@ -174,7 +174,7 @@ export const project = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'https://github.com/Nelisiwe?tab=repositories',
+        desc: <a href="https://github.com/Nelisiwe?tab=repositories" target="_blank">https://github.com/Nelisiwe?tab=repositories</a>,
       },
     ],
   },
@@ -202,7 +202,7 @@ export const project = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'https://github.com/Nelisiwe?tab=repositories',
+        desc: <a href="https://github.com/Nelisiwe?tab=repositories" target="_blank">https://github.com/Nelisiwe?tab=repositories</a>,
       },
     ],
   },
@@ -230,7 +230,7 @@ export const project = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'https://github.com/Nelisiwe?tab=repositories',
+        desc: <a href="https://github.com/Nelisiwe?tab=repositories" target="_blank" >https://github.com/Nelisiwe?tab=repositories</a>,
       },
     ],
   },

@@ -1,9 +1,9 @@
 import React from 'react'
 import Profile from "../../images/home.jpg"
 import MyLogo from "../../images/white-logo.jpg"
-import { Link } from 'react-router-dom';
-import { FaArrowRight, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaWhatsapp, FaDownload  } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
+import CV from "../../images/Resume.pdf"
 import "./home.css"
 
 const Home = () => {
@@ -33,12 +33,14 @@ const Home = () => {
             </a>
           </div>       
 
+        
         <div className='home_button_container'>
-          <Link to='/education' className='button'>
-              Download <span className='button_icon'><FaArrowRight /></span>
-            </Link>
+           <a href={CV} download='' className='home_button'>
+              Resume <span className='button_icon home_button_icon'><FaDownload /></span>
+           </a>   
             <img src={MyLogo} alt='' className='home_logo' />
-          </div>    
+          </div> 
+    
       </div>
 
       <div className='home_content'>

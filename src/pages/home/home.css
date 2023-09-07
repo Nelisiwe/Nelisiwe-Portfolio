@@ -102,6 +102,26 @@
     color: var(--text-white-color);
 }
 
+.home_button-icon {
+    font-size: var(--h3-font);
+    line-height: 50px;
+}
+
+.home_button {
+    display: block;
+    width: 160px;
+    color: var(--title-text-color);
+    border: 1px solid var(--title-text-color);
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: var(--big-font);
+    font-size: var(--small-font);
+    font-weight: var(--font-weight-500);
+    position: relative;
+}
+
 @media (max-width: 767px) {
     .home {
       grid-template-columns: none;
