@@ -28,14 +28,14 @@ const Home = () => {
               <FaLinkedin />
             </a>
 
-            <a href='https://wa.link/xxs17c' target="_blank" className='home_social-link'>
+            <a href='https://wa.link/9jqzgp' target="_blank" className='home_social-link'>
               <FaWhatsapp />
             </a>
           </div>       
 
         
         <div className='home_button_container'>
-           <a href={CV} download='' className='home_button'>
+           <a href={CV} download='' target="_blank" className='home_button'>
               Resume <span className='button_icon home_button_icon'><FaDownload /></span>
            </a>   
             <img src={MyLogo} alt='' className='home_logo' />

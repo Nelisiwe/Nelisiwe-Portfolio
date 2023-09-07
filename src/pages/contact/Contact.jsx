@@ -109,7 +109,7 @@ const Contact = () => {
               
               <div>
                 <span className='info_title'>Call me</span>
-                <h4 className='info_desc'>+2771 5918 903</h4>
+                <h4 className='info_desc'>+2773 0650 113</h4>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ const Contact = () => {
               <FaLinkedin />
             </a>
 
-            <a href='https://wa.link/xxs17c' target="_blank" className='contact_social-link'>
+            <a href='https://wa.link/9jqzgp' target="_blank" className='contact_social-link'>
               <FaWhatsapp />
             </a>
           </div>       
