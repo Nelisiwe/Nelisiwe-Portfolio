@@ -7,11 +7,13 @@ import CV from "../../images/Resume.pdf"
 import "./home.css"
 
 const Home = () => {
-  
+  // Returns a section with the title "Home" and the user's name and title.
   return (
     <section className='home section grid'>
       <div className='home_container'>
+       {/* The user's profile image */}
         <img src={Profile} alt='' className='home_img' />
+        {/* The user's contact information. */}
         <p className='home_details'>
            nelimajobe@gmail.com
           </p>
@@ -19,6 +21,7 @@ const Home = () => {
            Front-End / Software Developer
         </p>
 
+        {/* The user's social media links. */}
         <div className='home_socials'>
             <a href='https://github.com/Nelisiwe?tab=repositories' target="_blank" className='home_social-link'>
               < FaGithub/>
@@ -35,6 +38,7 @@ const Home = () => {
 
         
         <div className='home_button_container'>
+          {/* // The button to download the user's resume. */}
            <a href={CV} download='' target="_blank" className='home_button'>
               Resume <span className='button_icon home_button_icon'><FaDownload /></span>
            </a>   
@@ -48,6 +52,7 @@ const Home = () => {
           <h1 className='home_title-label'>
           Nelisiwe Gumede
           </h1>
+          {/* // Title TypeAnimation sequence. */}
           <h1 className='home_title'>
             I am a <TypeAnimation sequence={[
             'Front-end Developer',
