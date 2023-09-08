@@ -4,17 +4,19 @@ import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
 import '../App.css';
 
-
+// This is the PraticleBg component.
 const PraticleBg = () => {
+    // Declare two functions that will be used to initialize and load the particle system.
     const particlesInit = useCallback(async engine => {
         console.log(engine);
-        await loadSlim(engine);
+         // Load the particle system using the `loadSlim` function.        await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
 
+    // Returns the particle system UI.
     return (
         <Particles
             id="tsparticles"
@@ -22,6 +24,7 @@ const PraticleBg = () => {
             loaded={particlesLoaded}
             options={{
                 fpsLimit: 120,
+                //Configure the interactivity of the particle system.
                 interactivity: {
                     events: {
                         onClick: {
@@ -33,6 +36,7 @@ const PraticleBg = () => {
                             mode: "repulse",
                         },
                         resize: true,
+                        // Configure the modes for the onClick and onHover events.
                     },
                     modes: {
                         push: {

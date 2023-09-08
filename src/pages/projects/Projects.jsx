@@ -6,9 +6,10 @@ import "./projects.css"
 const Projects = () => {
   // Returns a section with the title "My Projects" and a list of projects
   return (
+    // The section title.
     <section className='portfolio section'>
       <h2 className='section_title'>My <span>Projects</span></h2>
-
+      {/* // The projects container. */}
       <div className='projects_container container grid'>
         {project.map((item) => {
           return <ProjectList key={item.id} {...item} />;

@@ -1,3 +1,4 @@
+// Import React Icons and other dependencies.
 import {
   FaHome,
   FaUser,
@@ -9,11 +10,12 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
+// Import the images.
 import Work1 from './images/project-1.png';
 import Work2 from './images/project-2.png';
 import Work3 from './images/project-3.png';
 
-
+// Export the links array.
 export const links = [
   {
     id: 1,
@@ -44,6 +46,7 @@ export const links = [
   },
 ];
 
+// Export the resume array.
 export const resume = [
   {
     id: 1,
@@ -100,6 +103,7 @@ export const resume = [
   },
 ];
 
+// Export the skills array.
 export const skills = [
   {
     id: 1,

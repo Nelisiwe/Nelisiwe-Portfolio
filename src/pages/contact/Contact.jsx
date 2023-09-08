@@ -105,6 +105,7 @@ const Contact = () => {
         Get in <span>Touch</span>
       </h2>
 
+      {/* // The contact container. */}
       <div className='contact_container container grid'>
         <div className='contact_data'>
           <h3 className='contact_title'>LET'S WORK TOGETHER</h3>
@@ -131,6 +132,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          {/* // The contact socials. */}
           <div className='contact_socials'>
             <a href='https://github.com/Nelisiwe?tab=repositories' target="_blank" className='contact_social-link'>
               < FaGithub/>

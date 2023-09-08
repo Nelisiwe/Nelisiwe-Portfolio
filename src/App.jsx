@@ -9,10 +9,12 @@ import './App.css'
 
 
 function App() {
+  // Returns the application's UI.
   return (
     <BrowserRouter>
       <PraticleBg />
       <Navbar />
+      {/* This is the routes configuration. It defines the routes that are available in the application. */}
       <Routes>
         <Route index element={<Home />} />
         <Route path='education' element={<Education />} />

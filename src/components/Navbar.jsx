@@ -5,9 +5,12 @@ import "./navbar.css";
 import { useState } from 'react';
 
 const Navbar = () => {
+  // Declare a state variable to track whether the menu is open or closed.
   const [showMenu, setShowMenu] = useState(false);
+  // Returns the navbar UI.
   return (
     <nav className='nav'>
+       {/* The `nav_menu` class is used to style the navbar menu. */}
       <div className={`${showMenu ? 'nav_menu show-menu' : 'nav_menu'}`}>
         <ul className='nav_list'>
           {links.map(({ icon, path }, index) => {
@@ -25,7 +28,9 @@ const Navbar = () => {
           })}
         </ul>
       </div>
+      {/* The `nav_toggle-manu` class is used to style the navbar toggle button. */}
       <div className='.nav_toggle-manu'>
+        {/* The `span` elements are used to create the hamburger menu icon. */}
       <div className={`${showMenu ? 'nav_toggle animate-toggle' : 'nav_toggle'}`} onClick={() => setShowMenu(!showMenu)}> 
           <span></span>
           <span></span>
