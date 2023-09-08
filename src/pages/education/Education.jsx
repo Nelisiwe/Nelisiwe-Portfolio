@@ -6,6 +6,7 @@ import Skills from '../../components/Skills';
 import "./education.css"
 
 const Education = () => {
+  // Returns a section with the title "My Projects" and a list of projects.
   return (
     <main className='section container'>
       <section className='resume' >
