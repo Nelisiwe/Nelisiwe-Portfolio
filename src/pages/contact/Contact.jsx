@@ -7,10 +7,13 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Footer from '../footer/Footer';
 
 
-
+// Define the Contact component.
 const Contact = () => {
+
+  // Create a state variable to store the value of the reCAPTCHA.
   const [recaptchaValue, setRecaptchaValue] = useState(null);
 
+  // Create a state variable to store the form data.
   const initialFormData = {
     name: '',
     email: '',
@@ -19,8 +22,11 @@ const Contact = () => {
   };
 
   const [formData, setFormData] = useState(initialFormData);
+
+  // Create a state variable to store the form errors.
   const [errors, setErrors] = useState({});
 
+  // Handle the change event for the form inputs.
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -29,23 +35,29 @@ const Contact = () => {
     }));
   };
 
+  // Validate the form data.
   const validateForm = () => {
     const validationErrors = {};
 
+    // Check if the name field is empty.
     if (!formData.name.trim()) {
       validationErrors.name = 'Name is required';
     }
 
+    // Check if the email field is empty.
     if (!formData.email.trim()) {
       validationErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       validationErrors.email = 'Email is not valid';
     }
 
+
+    // Check if the subject field is empty.
     if (!formData.subject.trim()) {
       validationErrors.subject = 'Subject is required';
     }
 
+    // Check if the message field is empty.
     if (!formData.message.trim()) {
       validationErrors.message = 'Message is required';
     }
@@ -55,11 +67,15 @@ const Contact = () => {
 
   const [messageSent, setMessageSent] = useState(false);
 
+  // Handle the submit event for the form.
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate the form data.
     const validationErrors = validateForm();
     setErrors(validationErrors);
 
+    // Check if the reCAPTCHA value is not empty.
     if (!recaptchaValue) {
       setErrors((prevErrors) => ({
         ...prevErrors,
@@ -68,6 +84,7 @@ const Contact = () => {
       return;
     }
 
+    // If there are no errors, send the email.
     if (Object.keys(validationErrors).length === 0) {
       emailjs.sendForm('service_232ssir', 'template_kw0vdhp', e.target, 'qTSEW2o9D97HDP45P')
       .then((result) => {
@@ -82,6 +99,7 @@ const Contact = () => {
   };
 
   return (
+    // This is the contact section of the website.
     <section className='contact section'>
       <h2 className='section_title'>
         Get in <span>Touch</span>
@@ -122,7 +140,7 @@ const Contact = () => {
               <FaLinkedin />
             </a>
 
-            <a href='https://wa.link/9jqzgp' target="_blank" className='contact_social-link'>
+            <a href='https://wa.link/9jqzgpy' target="_blank" className='contact_social-link'>
               <FaWhatsapp />
             </a>
           </div>       
