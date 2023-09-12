@@ -9,7 +9,8 @@ const PraticleBg = () => {
     // Declare two functions that will be used to initialize and load the particle system.
     const particlesInit = useCallback(async engine => {
         console.log(engine);
-         // Load the particle system using the `loadSlim` function.        await loadSlim(engine);
+         // Load the particle system using the `loadSlim` function.  
+         await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
