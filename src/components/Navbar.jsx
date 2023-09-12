@@ -13,7 +13,7 @@ const Navbar = () => {
        {/* The `nav_menu` class is used to style the navbar menu. */}
       <div className={`${showMenu ? 'nav_menu show-menu' : 'nav_menu'}`}>
         <ul className='nav_list'>
-          {links.map(({ icon, path }, index) => {
+          {links.map(({ icon, path, name }, index) => {
             return (
               <li className='nav_item' key={index}>
               <NavLink to={path} className={({ isActive }) => 
@@ -21,7 +21,7 @@ const Navbar = () => {
               onClick={() => setShowMenu(!showMenu)}
               >
                 {icon}
-                <h3 className='nav_item'></h3>
+                <h4 className='nav_item-text'>{name}</h4>
               </NavLink>
               </li>
             );

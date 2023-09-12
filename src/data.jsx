@@ -34,7 +34,7 @@ export const links = [
   {
     id: 3,
     name: 'Projects',
-    icon: <FaFolderOpen className='nav_icon' />,
+    icon: <FaFolderOpen className='nav_icon'/>,
     path: '/projects',
   },
 

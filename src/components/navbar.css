@@ -151,6 +151,10 @@
         margin-block: 20px;
     }
 
+    .nav_item-text {
+        font-size: var(--tiny-font);
+    }
+
     .nav_link {
         padding: 0;
         border-bottom: none;
