@@ -186,7 +186,7 @@ export const project = [
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
+    title: 'Game App',
     details: [
       {
         icon: <FiFileText />,
@@ -214,7 +214,7 @@ export const project = [
   {
     id: 3,
     img: Work3,
-    title: 'Game App',
+    title: 'Website Design',
     details: [
       {
         icon: <FiFileText />,

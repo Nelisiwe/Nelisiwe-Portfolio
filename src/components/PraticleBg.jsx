@@ -2,6 +2,7 @@ import React from 'react';
 import Particles from 'react-tsparticles';
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
+import "./praticleBg.css";
 import '../App.css';
 
 // This is the PraticleBg component.

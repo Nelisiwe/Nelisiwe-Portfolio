@@ -151,6 +151,8 @@
     .contact_socials {
         justify-content: center;
     }
+
+
     .form_input-group {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 15px;

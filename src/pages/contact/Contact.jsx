@@ -201,12 +201,14 @@ const Contact = () => {
           />
           {errors.recaptcha && <span>{errors.recaptcha}</span>}
         </div>
+        <div className='contact_button-cont'>
           <button className='contact_button' type='submit'>
             Send 
             <span className='button_icon contact_button-icon'>
               <FiSend />
             </span>
           </button >
+          </div>  
           {messageSent && <p className="message-sent">Message sent successfully!</p>}
         </form>
       </div>
