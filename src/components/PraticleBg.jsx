@@ -57,7 +57,7 @@ const PraticleBg = () => {
                         color: "#000",
                         distance: 150,
                         enable: true,
-                        opacity: 0.1,
+                        opacity: 0.2,
                         width: 2,
                     },
                     move: {

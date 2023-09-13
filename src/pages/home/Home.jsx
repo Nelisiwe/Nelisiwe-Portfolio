@@ -7,6 +7,7 @@ import CV from "../../images/Resume.pdf"
 import "./home.css"
 
 const Home = () => {
+  
   // Returns a section with the title "Home" and the user's name and title.
   return (
     <section className='home section grid'>

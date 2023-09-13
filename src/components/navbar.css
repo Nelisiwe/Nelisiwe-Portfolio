@@ -64,6 +64,10 @@
     transform: rotate(-45deg) translate(1px, 1px);
 }
 
+.nav_item-list {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .nav_toggle {
         position: fixed;
@@ -84,6 +88,11 @@
         margin-bottom: 5px;
         margin-left: auto; 
     }
+
+    .nav_item-list {
+        display: block;
+    }
+
     
 }
 
@@ -107,6 +116,10 @@
         margin-bottom: 5px;
         margin-left: auto; 
     }
+
+    .nav_item-list {
+        display: block;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -128,6 +141,10 @@
         background-color: var(--text-white-color);
         margin-bottom: 5px;
         margin-left: auto; 
+    }
+
+    .nav_item-list {
+        display: block;
     }
 }
 
