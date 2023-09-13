@@ -201,7 +201,7 @@ const Contact = () => {
           />
           {errors.recaptcha && <span>{errors.recaptcha}</span>}
         </div>
-        <div className='contact_button-cont'>
+        <div className='contact_button-container'>
           <button className='contact_button' type='submit'>
             Send 
             <span className='button_icon contact_button-icon'>
