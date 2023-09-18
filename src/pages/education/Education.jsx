@@ -10,7 +10,7 @@ const Education = () => {
   return (
     <main className='section container'>
       <section className='resume' >
-      <h3 className='section_subtitle subtitle_center'> Experience & Education </h3>
+      <h2 className='section_title'>Experience & <span>Education</span></h2>
        
        <div className="resume_container grid">
         <div className="resume_data">
