@@ -194,13 +194,11 @@ const Contact = () => {
             />
             {errors.message && <span>{errors.message}</span>}
           </div>
-          <div className="form_input-div">
           <ReCAPTCHA
             sitekey="6LcZnAIoAAAAABpv1AXpYOoKnnP9gfUPCTqFdWlr"
             onChange={(value) => setRecaptchaValue(value)}
           />
           {errors.recaptcha && <span>{errors.recaptcha}</span>}
-        </div>
         <div className='contact_button-container'>
           <button className='contact_button' type='submit'>
             Send 

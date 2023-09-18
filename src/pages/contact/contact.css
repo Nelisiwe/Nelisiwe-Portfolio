@@ -78,6 +78,14 @@
     margin-bottom: 30px;
 }
 
+.form_input-div:hover {
+    background-color: var(--container-color);
+    border-radius: 30px;
+    padding-left: 0;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
 .form_control {
     border: 1px solid var(--container-color);
     background-color: var(--container-color);
