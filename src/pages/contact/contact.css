@@ -82,8 +82,8 @@
     background-color: var(--container-color);
     border-radius: 30px;
     padding-left: 0;
-    transform: scale(1.1);
-    transition-duration: 0.5s;
+    transform: scale(1.05);
+    transition-duration: 1s;
 }
 
 .form_control {
@@ -113,6 +113,10 @@
 .contact_button-icon {
     font-size: var(--h3-font);
     line-height: 50px;
+}
+
+.contact_button-container {
+    margin-top: 20px;
 }
 
 .contact_button {
@@ -161,6 +165,12 @@
     }
 
     .contact_button-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact_recaptcha-container {
         display: flex;
         justify-content: center;
     }
@@ -180,9 +190,15 @@
         font-size: var(--h2-font);
     }
 
+    .contact_recaptcha-container {
+        display: flex;
+        justify-content: center;
+    }
+
     .contact_button-container {
         display: flex;
         justify-content: center;
+        margin-top: 20px;
     }
 }
 
@@ -193,8 +209,13 @@
     .section_title  {
         font-size: var(--h1-font);
     }
+    .contact_recaptcha-container {
+        display: flex;
+        justify-content: center;
+    }
     .contact_button-container {
         display: flex;
         justify-content: center;
+        margin-top: 20px;
     }
 }
