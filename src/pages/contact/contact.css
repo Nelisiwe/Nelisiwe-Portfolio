@@ -43,6 +43,11 @@
     font-weight: var(--weight-500);
 }
 
+.contact_info .info_desc a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .contact_socials {
     display: flex;
     margin-bottom: 20px;

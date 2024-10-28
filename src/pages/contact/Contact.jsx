@@ -110,7 +110,7 @@ const Contact = () => {
         <div className='contact_data'>
           <h3 className='contact_title'>LET'S WORK TOGETHER</h3>
           <p className='contact_description'>
-            Feel freen to get in touch with me. I am always open to discussing new project, creative ideas or opportunities to be part of your vision.
+            Feel free to get in touch with me. I am always open to discussing new project, creative ideas or opportunities to be part of your vision.
           </p>
 
           <div className="contact_info">
@@ -128,7 +128,7 @@ const Contact = () => {
               
               <div>
                 <span className='info_title'>Call me</span>
-                <h4 className='info_desc'>+2773 0650 113</h4>
+                <h4 className='info_desc'><a href="tel:+27715918903">+2771 591 8903</a></h4>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ const Contact = () => {
               <FaLinkedin />
             </a>
 
-            <a href='https://wa.link/9jqzgpy' target="_blank" className='contact_social-link'>
+            <a href='https://wa.link/c1xgz3' target="_blank" className='contact_social-link'>
               <FaWhatsapp />
             </a>
           </div>       
