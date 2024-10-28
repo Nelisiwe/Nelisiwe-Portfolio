@@ -31,7 +31,7 @@ const Home = () => {
               <FaLinkedin />
             </a>
 
-            <a href='https://wa.link/9jqzgp' target="_blank" className='home_social-link'>
+            <a href='https://wa.link/c1xgz3' target="_blank" className='home_social-link'>
               <FaWhatsapp />
             </a>
           </div>       
@@ -66,8 +66,7 @@ const Home = () => {
           </h1>
 
           <p className='home_description'>
-            Im a passionate Front-end Developer with 4 years of work experience in creating mobile and web application that are user friendly. I'm currently doing a Software Development at Younglings Africa.
-          </p>
+          I am a passionate Front-End Developer with 4 years of experience in creating user-friendly mobile and web applications. I recently completed my software programming studies and am actively seeking new opportunities to further my career.          </p>
         </div>
       </div>
     </section>
