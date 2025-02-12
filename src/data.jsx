@@ -80,7 +80,7 @@ export const resume = [
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2023',
-    title: 'React application <span> LinkedIn </span>',
+    title: 'Software Development Learnership <span> CapaCiti </span>',
     desc: 'Create a simple full-stack web application using AWS Amplify, a set of tools and services including a web hosting. ',
   },
 
@@ -206,7 +206,7 @@ export const project = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: <a href="https://github.com/Nelisiwe?tab=repositories" target="_blank">https://github.com/Nelisiwe?tab=repositories</a>,
+        desc: <a href="https://nelisiwe.github.io/Kgoshi-holdings" target="_blank">https://nelisiwe.github.io/Kgoshi-holdings</a>,
       },
     ],
   },

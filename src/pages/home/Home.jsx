@@ -18,10 +18,6 @@ const Home = () => {
            Front-End / Software Developer
         </p>
         <div className='home_socials'>
-            <a href='https://github.com/Nelisiwe?tab=repositories' target="_blank" className='home_social-link'>
-              < FaGithub/>
-            </a>
-
             <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' target="_blank" className='home_social-link'>
               <FaLinkedin />
             </a>

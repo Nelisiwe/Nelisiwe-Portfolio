@@ -134,10 +134,6 @@ const Contact = () => {
           </div>
           {/* // The contact socials. */}
           <div className='contact_socials'>
-            <a href='https://github.com/Nelisiwe?tab=repositories' target="_blank" className='contact_social-link'>
-              < FaGithub/>
-            </a>
-
             <a href='https://www.linkedin.com/in/nelisiwe-gumede-2b393122b/' target="_blank" className='contact_social-link'>
               <FaLinkedin />
             </a>
