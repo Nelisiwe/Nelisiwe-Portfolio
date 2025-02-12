@@ -52,7 +52,7 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2023 - PRESENT',
+    year: '2023 ',
     title: 'Software developer <span> Younglings africa </span>',
     desc: 'Designs and builds computer programs that power mobile devices and desktop computers.',
   },
@@ -158,17 +158,17 @@ export const project = [
   {
     id: 1,
     img: Work1,
-    title: 'Mzamomtsha Primary',
+    title: 'Inkazimolo Shipping',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'Live Website',
       },
       {
         icon: <FiUser />,
-        title: 'School : ',
-        desc: 'Mzamomtsha Primary',
+        title: 'Company : ',
+        desc: 'Inkazimolo Shipping',
       },
       {
         icon: <FaCode />,
@@ -178,7 +178,7 @@ export const project = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: <a href="https://github.com/Nelisiwe?tab=repositories" target="_blank">https://github.com/Nelisiwe?tab=repositories</a>,
+        desc: <a href="https://www.inkazimoloshipping.co.za" target="_blank">https://www.inkazimoloshipping.co.za</a>,
       },
     ],
   },
@@ -186,7 +186,7 @@ export const project = [
   {
     id: 2,
     img: Work2,
-    title: 'Game App',
+    title: 'Kgoshi Holdings',
     details: [
       {
         icon: <FiFileText />,
@@ -195,13 +195,13 @@ export const project = [
       },
       {
         icon: <FiUser />,
-        title: 'School Project : ',
-        desc: 'Banking App',
+        title: 'Company : ',
+        desc: 'Kgoshi Holdings',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Python',
+        desc: 'Html, CSS & JavaScript',
       },
       {
         icon: <FiExternalLink />,

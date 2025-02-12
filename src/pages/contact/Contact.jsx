@@ -129,7 +129,7 @@ const Contact = () => {
               <div>
                 <span className='info_title'>Call me</span>
                 <h4 className='info_desc'><a href="tel:+27715918903">+2771 591 8903</a></h4>
-              </div>
+             </div>
             </div>
           </div>
           {/* // The contact socials. */}

@@ -7,21 +7,16 @@ import CV from "../../images/Resume.pdf"
 import "./home.css"
 
 const Home = () => {
-  // Returns a section with the title "Home" and the user's name and title.
   return (
     <section className='home section grid'>
       <div className='home_container'>
-       {/* The user's profile image */}
         <img src={Profile} alt='' className='home_img' />
-        {/* The user's contact information. */}
         <p className='home_details'>
            nelimajobe@gmail.com
           </p>
           <p className='home_details'>
            Front-End / Software Developer
         </p>
-
-        {/* The user's social media links. */}
         <div className='home_socials'>
             <a href='https://github.com/Nelisiwe?tab=repositories' target="_blank" className='home_social-link'>
               < FaGithub/>
