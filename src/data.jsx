@@ -158,7 +158,7 @@ export const project = [
   {
     id: 1,
     img: Work1,
-    title: 'Inkazimolo Shipping',
+    title: 'Website Design',
     details: [
       {
         icon: <FiFileText />,
@@ -186,11 +186,11 @@ export const project = [
   {
     id: 2,
     img: Work2,
-    title: 'Kgoshi Holdings',
+    title: 'Website Design',
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
+        title: 'Ongoing Project : ',
         desc: 'Website',
       },
       {
@@ -218,23 +218,23 @@ export const project = [
     details: [
       {
         icon: <FiFileText />,
-        title: 'Project : ',
+        title: 'Ongoing Project : ',
         desc: 'Website',
       },
       {
         icon: <FiUser />,
-        title: 'School Project : ',
-        desc: 'Snake Game',
+        title: 'JustB : ',
+        desc: 'Makeup Studio',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'Html, CSS & JavaScript',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: <a href="https://github.com/Nelisiwe?tab=repositories" target="_blank" >https://github.com/Nelisiwe?tab=repositories</a>,
+        desc: <a href="https://nelisiwe.github.io/JustB" target="_blank" >https://nelisiwe.github.io/JustB</a>,
       },
     ],
   },
